@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "04_input/src",
+        "01-logica-de-progamacao/src"
+    ],
+    "java.project.referencedLibraries": []
+}
