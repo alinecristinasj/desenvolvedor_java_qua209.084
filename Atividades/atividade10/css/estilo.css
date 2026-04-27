@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+/* TOPO */
+.topo {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.topo h1 {
+    font-size: 24px;
+}
+
+.menu-topo span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu-topo .ativo {
+    color: #00ff99;
+    border-bottom: 2px solid #00ff99;
+}
+
+/* MENU LATERAL */
+.sidebar {
+    width: 220px;
+    background: #f4f4f4;
+    padding: 80px 15px 20px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin: 15px 0;
+    color: green;
+}
+
+.sidebar p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* CONTEÚDO */
+.container {
+    margin-top: 70px;
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
+}
+
+/* GRID DE CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.user {
+    font-weight: bold;
+}
+
+.views {
+    color: gray;
+}

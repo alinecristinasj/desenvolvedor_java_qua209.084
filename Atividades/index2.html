@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>YouCast Clone</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        background: #222;
+        color: white;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu span {
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .menu span:last-child {
+        color: #ff4fd8;
+        font-weight: bold;
+    }
+
+    /* LAYOUT */
+    .container {
+        display: flex;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 220px;
+        background: #fff;
+        padding: 15px;
+        border-right: 1px solid #ddd;
+    }
+
+    .sidebar h3 {
+        font-size: 14px;
+        margin-top: 20px;
+        color: #666;
+    }
+
+    .sidebar p {
+        font-size: 13px;
+        margin: 5px 0;
+        color: #333;
+    }
+
+    /* GRID */
+    .content {
+        flex: 1;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-info {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .views {
+        color: gray;
+        font-size: 12px;
+    }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">YouCast <span style="color:#ff4fd8;">NOW</span></div>
+    <div class="menu">
+        <span>Streaming</span>
+        <span>Discover</span>
+        <span>Cast Now</span>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <h3>Trending Casters</h3>
+        <p>@user1</p>
+        <p>@user2</p>
+        <p>@user3</p>
+
+        <h3>Hashtags</h3>
+        <p>#music</p>
+        <p>#dance</p>
+        <p>#fun</p>
+
+        <h3>Locations</h3>
+        <p>Brazil</p>
+        <p>USA</p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="grid">
+
+            <!-- CARD -->
+            <div class="card">
+                <img src="https://picsum.photos/300/200?1">
+                <div class="card-info">
+                    <strong>@user</strong><br>
+                    <span class="views">👁 2456</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?2">
+                <div class="card-info">
+                    <strong>@user</strong><br>
+                    <span class="views">👁 567</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?3">
+                <div class="card-info">
+                    <strong>@user</strong><br>
+                    <span class="views">👁 13456</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?4">
+                <div class="card-info">
+                    <strong>@user</strong><br>
+                    <span class="views">👁 7847</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
