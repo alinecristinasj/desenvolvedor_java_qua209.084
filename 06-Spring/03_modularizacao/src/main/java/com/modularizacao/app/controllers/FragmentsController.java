@@ -1,0 +1,17 @@
+package main.java.com.modularizacao.app.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class FragmentsController {
+    @RequestMapping("/")
+    public String index() {
+        return "index";
+    }
+
+    @RequestMapping("/linkInPark")
+    public String link() {
+        return "link";
+    }
+}
